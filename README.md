@@ -50,6 +50,18 @@ Work is grouped below by the problem it belongs to. A category appears here once
 
 <br/>
 
+**[🏛️aurelis](https://github.com/martex-dev/aurelis)** — an autonomous quantitative research corporation
+
+Ten departments, seven market desks, seventy-six role charters. Agents observe, hypothesise, run experiments, argue in scheduled meetings, decide, build strategies, manage risk, paper-trade — and **reorganise the company itself when the evidence justifies it**.
+
+The demonstration is the part worth reading. A researcher registers a max-drawdown claim over the instruments still trading, and the run confirms it. A Critic raises `SURVIVORSHIP` — and does not write the test itself; the taxonomy generates it from the specification under review. The point-in-time re-run restores three delisted names, drawdown goes from **12% to 65%**, and the claim is refuted by a measurement rather than by an argument. Nobody intervenes at any point.
+
+It is the same defect `martex-quant` caught by hand on real crypto history, where it took a Sharpe of 1.47 down to 0.86. Here the organisation finds it unaided.
+
+<sub>`Python` · `SQLAlchemy` · `Pydantic` · `Typer` · `Rich` — 19 commits · MIT · CI green · **M14, past its roadmap** · no live trading adapter exists</sub>
+
+<br/>
+
 **[🔬nullius](https://github.com/martex-dev/nullius)** — an artificial research institution, built so that it can be proven wrong
 
 AI Research civilization 
@@ -168,6 +180,7 @@ It is scored against structural causal models with known ground truth — includ
 ![Hypothesis](https://img.shields.io/badge/Hypothesis-A020F0?style=for-the-badge&logoColor=white)
 ![uv](https://img.shields.io/badge/uv-DE5FE9?style=for-the-badge&logo=uv&logoColor=white)
 ![Typer](https://img.shields.io/badge/Typer-0B7285?style=for-the-badge&logo=typer&logoColor=white)
+![Rich](https://img.shields.io/badge/Rich-FAE742?style=for-the-badge&logo=rich&logoColor=000000)
 ![GitHub Actions](https://img.shields.io/badge/Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![pre-commit](https://img.shields.io/badge/pre--commit-FAB040?style=for-the-badge&logo=precommit&logoColor=000000)
@@ -177,6 +190,7 @@ It is scored against structural causal models with known ground truth — includ
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![PyPI](https://img.shields.io/badge/PyPI-3775A9?style=for-the-badge&logo=pypi&logoColor=white)
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
+![Claude Agent SDK](https://img.shields.io/badge/Claude%20Agent%20SDK-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
 
 </div>
 
