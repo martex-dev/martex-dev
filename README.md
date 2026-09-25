@@ -110,6 +110,7 @@ It is scored against structural causal models with known ground truth — includ
 |---|---|---|
 | **[late-payment-chaser](https://github.com/martex-dev/late-payment-chaser)** · [live ↗](https://late-payment-chaser.vercel.app) | Statutory late-payment interest UK and EU freelancers are legally owed on overdue invoices. Every rate cited to the central bank's own table, all money in integer minor units, and no model anywhere near the arithmetic | Next.js · TypeScript |
 | **ScamLens** <sub>· in development</sub> | Scans a message and rates how likely it is to be a scam — reporting the specific signals behind the score rather than handing back a bare verdict | — |
+| **Forge** <sub>· in development</sub> | Desktop command centre for day-to-day work. Source is private for now; installers will be published separately | — |
 
 <br/>
 
