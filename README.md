@@ -50,6 +50,16 @@ Work is grouped below by the problem it belongs to. A category appears here once
 
 <br/>
 
+**[🔨forge](https://github.com/martex-dev/forge)** — personal command centre: code editor, trading desk, ML lab and knowledge hub in one Electron app
+
+Four panes behind `Ctrl+1`—`Ctrl+4`. **Build** is a real editor, not a textarea: Monaco through the VS Code editor API, with `typescript-language-server` and `basedpyright` speaking the Language Server Protocol, xterm.js terminals on `node-pty`, ripgrep search and `simple-git`. **Trade** and **Lab** run against a Python sidecar (FastAPI over WebSockets) holding DuckDB, Polars, a Jupyter kernel client and MetaTrader5. State is SQLite through Drizzle, with migrations generated from the schema and applied on startup.
+
+The detail worth noticing: **the sidecar imports `purged-cv` and `calibrate`** — two of the small tools listed further down — pinned to their own repositories rather than PyPI, where both names belong to unrelated projects. The parts bin assembling into the machine.
+
+<sub>`TypeScript` · `Electron` · `React` · `Monaco` · `Drizzle` + `SQLite` · `FastAPI` · `DuckDB` · `Polars` — 30 commits · CI green · Playwright e2e · **phase 6 of 6 — Ship**</sub>
+
+<br/>
+
 **[🏛️aurelis](https://github.com/martex-dev/aurelis)** — an autonomous quantitative research corporation
 
 Ten departments, seven market desks, seventy-six role charters. Agents observe, hypothesise, run experiments, argue in scheduled meetings, decide, build strategies, manage risk, paper-trade — and **reorganise the company itself when the evidence justifies it**.
@@ -110,7 +120,6 @@ It is scored against structural causal models with known ground truth — includ
 |---|---|---|
 | **[late-payment-chaser](https://github.com/martex-dev/late-payment-chaser)** · [live ↗](https://late-payment-chaser.vercel.app) | Statutory late-payment interest UK and EU freelancers are legally owed on overdue invoices. Every rate cited to the central bank's own table, all money in integer minor units, and no model anywhere near the arithmetic | Next.js · TypeScript |
 | **ScamLens** <sub>· in development</sub> | Scans a message and rates how likely it is to be a scam — reporting the specific signals behind the score rather than handing back a bare verdict | — |
-| **Forge** <sub>· in development</sub> | Desktop command centre for day-to-day work. Source is private for now; installers will be published separately | — |
 
 <br/>
 
@@ -151,6 +160,9 @@ It is scored against structural causal models with known ground truth — includ
 ![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white)
 ![statsmodels](https://img.shields.io/badge/statsmodels-4051B5?style=for-the-badge&logoColor=white)
 ![yfinance](https://img.shields.io/badge/yfinance-6001D2?style=for-the-badge&logoColor=white)
+![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=for-the-badge&logo=duckdb&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+![MetaTrader 5](https://img.shields.io/badge/MetaTrader%205-0A0A0A?style=for-the-badge&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white)
@@ -162,6 +174,13 @@ It is scored against structural causal models with known ground truth — includ
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Electron](https://img.shields.io/badge/Electron-2B2E3A?style=for-the-badge&logo=electron&logoColor=white)
+![Monaco Editor](https://img.shields.io/badge/Monaco%20Editor-0098FF?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+![Drizzle ORM](https://img.shields.io/badge/Drizzle%20ORM-C5F74F?style=for-the-badge&logo=drizzle&logoColor=white)
+![Zustand](https://img.shields.io/badge/Zustand-443E38?style=for-the-badge&logoColor=white)
+![TanStack Query](https://img.shields.io/badge/TanStack%20Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white)
+![Radix UI](https://img.shields.io/badge/Radix%20UI-161618?style=for-the-badge&logo=radixui&logoColor=white)
+![ECharts](https://img.shields.io/badge/ECharts-AA344D?style=for-the-badge&logo=apacheecharts&logoColor=white)
 ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
 ![Recharts](https://img.shields.io/badge/Recharts-22B5BF?style=for-the-badge&logoColor=white)
 ![Zod](https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge&logo=zod&logoColor=white)
@@ -177,6 +196,8 @@ It is scored against structural causal models with known ground truth — includ
 ![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white)
 ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)
 ![Ruff](https://img.shields.io/badge/Ruff-D7FF64?style=for-the-badge&logo=ruff&logoColor=000000)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)
+![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=white)
 ![mypy](https://img.shields.io/badge/mypy-2A6DB2?style=for-the-badge&logoColor=white)
 ![Hypothesis](https://img.shields.io/badge/Hypothesis-A020F0?style=for-the-badge&logoColor=white)
 ![uv](https://img.shields.io/badge/uv-DE5FE9?style=for-the-badge&logo=uv&logoColor=white)
