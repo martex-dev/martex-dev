@@ -50,13 +50,23 @@ Work is grouped below by the problem it belongs to. A category appears here once
 
 <br/>
 
-**[🔨forge](https://github.com/martex-dev/forge)** — personal command centre: code editor, trading desk, ML lab and knowledge hub in one Electron app
+**[⚒️anvil](https://github.com/martex-dev/anvil)** — the AI code editor for quant, trading, crypto, ML and data work · [download ↗](https://github.com/martex-dev/anvil/releases/latest)
 
-Four panes behind `Ctrl+1`—`Ctrl+4`. **Build** is a real editor, not a textarea: Monaco through the VS Code editor API, with `typescript-language-server` and `basedpyright` speaking the Language Server Protocol, xterm.js terminals on `node-pty`, ripgrep search and `simple-git`. **Trade** and **Lab** run against a Python sidecar (FastAPI over WebSockets) holding DuckDB, Polars, a Jupyter kernel client and MetaTrader5. State is SQLite through Drizzle, with migrations generated from the schema and applied on startup.
+Monaco with real language servers — basedpyright running against *your* interpreter's site-packages, typescript-language-server for TS/JS — plus xterm.js terminals on `node-pty`, git diff bars and inline blame in the gutter, and ripgrep search. What makes it not just another editor is the loop it is tuned for: `# %%` cells run in a **persistent IPython REPL** with variables kept between runs, Parquet, Feather and Excel open in a grid virtualised to a million rows with per-column profiles, and a `.ipynb` converts to a `# %%` script in one click.
 
-The detail worth noticing: **the sidecar imports `purged-cv` and `calibrate`** — two of the small tools listed further down — pinned to their own repositories rather than PyPI, where both names belong to unrelated projects. The parts bin assembling into the machine.
+Then the details only someone living in that loop would build: **51 quant and ML snippets** (Sharpe, Kelly, Black–Scholes greeks, purged K-fold, triple-barrier labels, ccxt pagination), 46 selection transforms, inline maths evaluation, clickable tracebacks, and a **secret shield** so an API key or a seed phrase never reaches a commit.
 
-<sub>`TypeScript` · `Electron` · `React` · `Monaco` · `Drizzle` + `SQLite` · `FastAPI` · `DuckDB` · `Polars` — 30 commits · CI green · Playwright e2e · **phase 6 of 6 — Ship**</sub>
+<sub>`TypeScript` · `Electron` · `React` · `Monaco` + `LSP` · `xterm.js` · `IPython` · `Zustand` — CI green · Windows installers published</sub>
+
+<br/>
+
+**[🌐specter](https://github.com/martex-dev/specter)** — a Chromium desktop browser with a local-first power toolkit · [download ↗](https://github.com/martex-dev/specter/releases/latest)
+
+A real browser first: tabs, tab groups, workspaces, profiles with isolated cookies and storage, per-site permissions, Chromium DevTools, session restore, and bookmark and history import from six other browsers. Then the tools layered on top, every one of them **local, free and accountless** — no API keys, no telemetry: AI through Ollama with an explicit context selector and citations, markdown notes with `[[backlinks]]` and hybrid keyword + **semantic search over local embeddings**, markets with candlestick charts and paper trading, and a system monitor.
+
+The title bar doubles as an instrument panel — live CPU, RAM and GPU, tabs awake versus sleeping, trackers blocked, all measured rather than estimated. Tab sleeping runs a real lifecycle and reports the memory it actually released, which is the part most browsers only claim.
+
+<sub>`TypeScript` · `Electron 44` + `Chromium 152` · `React` · `SQLite` FTS5 · `Ollama` · `Lightweight Charts` — 30 commits · MIT · six theme packs</sub>
 
 <br/>
 
@@ -162,6 +172,7 @@ It is scored against structural causal models with known ground truth — includ
 ![yfinance](https://img.shields.io/badge/yfinance-6001D2?style=for-the-badge&logoColor=white)
 ![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=for-the-badge&logo=duckdb&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+![IPython](https://img.shields.io/badge/IPython-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![MetaTrader 5](https://img.shields.io/badge/MetaTrader%205-0A0A0A?style=for-the-badge&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
@@ -175,6 +186,11 @@ It is scored against structural causal models with known ground truth — includ
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Electron](https://img.shields.io/badge/Electron-2B2E3A?style=for-the-badge&logo=electron&logoColor=white)
+![Chromium](https://img.shields.io/badge/Chromium-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)
+![xterm.js](https://img.shields.io/badge/xterm.js-1A1A1A?style=for-the-badge&logoColor=white)
+![LSP](https://img.shields.io/badge/LSP-6E4C9E?style=for-the-badge&logoColor=white)
+![Lightweight Charts](https://img.shields.io/badge/Lightweight%20Charts-2962FF?style=for-the-badge&logo=tradingview&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 ![Monaco Editor](https://img.shields.io/badge/Monaco%20Editor-0098FF?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 ![Drizzle ORM](https://img.shields.io/badge/Drizzle%20ORM-C5F74F?style=for-the-badge&logo=drizzle&logoColor=white)
 ![Zustand](https://img.shields.io/badge/Zustand-443E38?style=for-the-badge&logoColor=white)
@@ -213,6 +229,7 @@ It is scored against structural causal models with known ground truth — includ
 ![PyPI](https://img.shields.io/badge/PyPI-3775A9?style=for-the-badge&logo=pypi&logoColor=white)
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
 ![Claude Agent SDK](https://img.shields.io/badge/Claude%20Agent%20SDK-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
 
 </div>
 
